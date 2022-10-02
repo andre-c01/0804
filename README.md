@@ -92,7 +92,7 @@ class nameofclass {
 ```
 
 ```java
-int i = Integer.parseInt(in.next()); //This will take an Integer as input
+int i = Integer.parseInt(in.next());   //This will take an Integer as input
 ``` 
 
 ```java
@@ -100,7 +100,31 @@ float i = Float.parseFloat(in.next()); //This will take a Float as input
 ``` 
 
 ```java
-string i = in.next(); //This will take a String as input
+string i = in.next();                  //This will take a String as input
+```
+
+##
+
+### :small_blue_diamond:**Types of Variables**
+ 
+```java
+int varname = 5;                // A integer variable
+``` 
+
+```java
+float varname = 5.476;          // A float variable
+```
+
+```java
+char varname = 'c';             // A char variable
+``` 
+
+```java
+string varname = "Hello World"; // A string variable
+``` 
+
+```java
+boolean varname = true;         // A boolean variable ( true / false )
 ``` 
 
 - - - 
