@@ -116,6 +116,10 @@ float varname = 5.476;          // A float variable
 ```
 
 ```java
+double varname = 5.476978;      // A double variable
+```
+
+```java
 char varname = 'c';             // A char variable
 ``` 
 
