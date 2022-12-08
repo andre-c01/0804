@@ -1,11 +1,11 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-class vector3 {
+class array03 {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
-		Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);
 		int[] nums = new int[6];
 		int[] even = new int[6];
 		int[] odd = new int[6];
@@ -14,9 +14,9 @@ class vector3 {
 		int even_count = 0;
 		int odd_count = 0;
 		int i = 0;
-		
+
 		do {
-			
+
 			System.out.println("##################");
 			System.out.println("Numbers ("+ nums_count +")");
 			System.out.println(Arrays.toString(nums));
@@ -49,7 +49,6 @@ class vector3 {
 
 			i++;
 		}while(i <= nums.length);
-		
-	}	
-	
+
+  }
 }
