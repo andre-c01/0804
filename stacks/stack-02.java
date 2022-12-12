@@ -1,34 +1,26 @@
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.Queue;
+import java.util.LinkedList;
 
-class stack01 {
+class Main {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        // Creating Queue using the LinkedList class
+        Queue<Integer> numbers = new LinkedList<>();
 
-    Stack<String> stk = new Stack<>();
-    Scanner scanner = new Scanner(System.in);
-    int menu;
-    String entry;
+        // offer elements to the Queue
+        numbers.offer(1);
+        numbers.offer(2);
+        numbers.offer(3);
+        System.out.println("Queue: " + numbers);
 
-    do {
+        // Access elements of the Queue
+        int accessedNumber = numbers.peek();
+        System.out.println("Accessed Element: " + accessedNumber);
 
-      System.out.print("""
-                        ------ Menu -------
-                          1 - Write to Stack
-                          2 - Read Top el.
-                          3 - Exit
-                          Type an option:""");
-      menu = scanner.nextInt();
-      if(menu == 1) {
-        //scanner.nextLine();
-        System.out.print("Write entry: ");
-        entry = scanner.next();
-        stk.push(entry);
-      } else if(menu == 2) {
-        System.out.println(stk.peek());
-        System.out.println("Stack: " + stk);
-      }
-    } while(menu != 3);
+        // Remove elements from the Queue
+        int removedNumber = numbers.poll();
+        System.out.println("Removed Element: " + removedNumber);
 
-  }
+        System.out.println("Updated Queue: " + numbers);
+    }
 }
